@@ -10,93 +10,13 @@
     transform: translateX(-30px);
 }
 
-.views-container
-{
-    width: 1024px;
-    height: 70px;
-    background-color: white;
-    margin-top: 10px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 51%);
-    align-content: center;
-}
-
-.views-container p
-{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color: #dd0000;
-}
-
-.views-container h1
-{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-left: 10px;
-    color: black;
-    margin: 13px 0 -5px 0;
-}
-
-.views-child
-{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    align-self: flex-end;
-    align-content: center;
-    flex-direction: row;
-    padding: 0 15px 0 15px;
-}
-
-.views-child img { height: 35px; margin-left: 10px; }
-
-.video-host
-{
-    background: url(../img/febrasgo-logo.png);
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 100%;
-    border: solid 3px #dd0000;
-    height: 35px;
-    width: 40px;
-}
-
-.video-host-views-title
-{
-    margin-left: 15px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: flex-start;
-}
-
-.video-host-flex-break
-{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-direction: row;
-}
-
 video
 {
     border-radius: 20px;
     -webkit-border-radius: 20px; 
     -moz-border-radius: 20px; 
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.514);
+    outline: none !important;
 }
 
 .video-container.fade, .loading-gif-container.fade

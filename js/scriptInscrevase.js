@@ -33,29 +33,29 @@ document.onreadystatechange = function () {
 
         // Atribuição da animação do formulário
 
-        document.getElementById("nome").classList.add('fade');
-        document.getElementById("nome-label").classList.add('fade');
-
-        document.getElementById("email").classList.add('fade');
-        document.getElementById("email-label").classList.add('fade');
-
-        document.getElementById("tel").classList.add('fade');
-        document.getElementById("tel-label").classList.add('fade');
-        document.getElementById("telefone-container").classList.add('fade');
-        document.querySelector('.masked').classList.add('fade');
-        document.querySelector('.shell').classList.add('fade');
-
-        document.getElementById("form-div-cidade-estado").classList.add('fade');
-
-        document.getElementById("cidade").classList.add('fade');
-        document.getElementById("cidade-label").classList.add('fade');
-
-        document.getElementById("uf").classList.add('fade');
-        document.getElementById("uf-label").classList.add('fade');
-
-        document.getElementById("form-div-checkbox-termos").classList.add('fade');
+        setTimeout(() => { document.getElementById("nome").classList.add('fade'); }, 150);
+        setTimeout(() => { document.getElementById("nome-label").classList.add('fade'); }, 200);
         
-        document.getElementById("form-input-submit").classList.add('fade');
+        setTimeout(() => { document.getElementById("email").classList.add('fade'); }, 250);
+        setTimeout(() => { document.getElementById("email-label").classList.add('fade'); }, 300);
+        
+        setTimeout(() => { document.getElementById("tel-label").classList.add('fade'); }, 350);
+        setTimeout(() => { document.getElementById("tel").classList.add('fade'); }, 400);
+        setTimeout(() => { document.getElementById("telefone-container").classList.add('fade'); }, 400);
+        setTimeout(() => { document.querySelector('.masked').classList.add('fade'); }, 400);
+        setTimeout(() => { document.querySelector('.shell').classList.add('fade'); }, 400);
+        
+        setTimeout(() => { document.getElementById("form-div-cidade-estado").classList.add('fade'); }, 450);
+        
+        setTimeout(() => { document.getElementById("cidade").classList.add('fade'); }, 500);
+        setTimeout(() => { document.getElementById("cidade-label").classList.add('fade'); }, 550);
+        
+        setTimeout(() => { document.getElementById("uf").classList.add('fade'); }, 600);
+        setTimeout(() => { document.getElementById("uf-label").classList.add('fade'); }, 650);
+        
+        setTimeout(() => { document.getElementById("form-div-checkbox-termos").classList.add('fade'); }, 700);
+          
+        setTimeout(() => { document.getElementById("form-input-submit").classList.add('fade'); }, 750);
 
     }
 }

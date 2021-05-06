@@ -3,7 +3,7 @@ document.onreadystatechange = function () {
 
         // Simulação de loading da mídia
         
-        document.querySelector('.loading-gif-container').classList.add('fade');
+        setTimeout(() => { document.querySelector('.loading-gif-container').classList.add('fade'); }, 100);
         setTimeout(() => { mostrarVideo() }, 2000);
         setTimeout(() => { document.querySelector('.video-container').classList.add('fade'); }, 2200);
         
