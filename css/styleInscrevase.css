@@ -1,0 +1,314 @@
+/* Formulário */
+#form-container {margin:0; padding:0;}
+
+main form
+{
+    min-width: 30%;
+    max-width: 40%;
+    max-height: 72vh;
+    padding: 50px 0 50px 0;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px; 
+    -moz-border-radius: 25px; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.322);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+main form h1
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    align-self: flex-start;
+    margin: 0px 0 50px 11%;
+    padding: 0;
+}
+
+main form h1 span
+{
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(30px);
+}
+
+main form h1 span.fade
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+main form label
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    align-self: flex-start;
+    margin-left: 11%;
+}
+
+.form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+{
+    width: 78%;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    background-color: #e3e3e3;
+    height: 35px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-indent: 5px;
+    color: black;
+}
+
+input.masked { height: 33px; }
+.shell span { display: none; }
+#tel { text-indent: 0px; }
+
+#nome, #tel, #email, #tel, .form-input1, .masked, .shell, #telefone-container, 
+#cidade, #uf, #nome-label, #email-label, #tel-label, #form-div-cidade-estado, 
+#form-div-checkbox-termos
+{
+    opacity: 0;
+    transition: 0.8s;
+    transform: translateX(-30px);
+}
+
+#nome.fade, #tel.fade, #email.fade, #tel.fade, .form-input1.fade, .masked.fade, 
+.shell.fade, #cidade.fade, #telefone-container.fade, #uf.fade, #nome-label.fade, 
+#email-label.fade, #tel-label.fade, #form-div-cidade-estado.fade, #form-div-checkbox-termos.fade
+{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+#form-input-submit.fade
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.form-input1:focus, .form-input2:focus, #form-div-cidade-estado select:focus { outline: none !important; }
+.form-input2 { width: 90%; }
+
+#form-div-cidade-estado
+{
+    width:78%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#form-div-cidade-estado label { margin-left: 0; }
+#form-div-cidade-estado select { width: 100%; }
+
+#form-div-checkbox-termos
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 35px;
+    margin-left: 11%;
+    padding: 0;
+}
+
+#form-div-checkbox-termos label
+{
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color:#7d7d7d;
+}
+
+#form-div-checkbox-termos label a 
+{ 
+    color: #2b2b2b;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#form-div-checkbox-termos input[type=checkbox]
+{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#custom-checkbox
+{
+    width: 20px;
+    height: 20px;
+    background-color: #e3e3e3;
+    margin-right: -8%;
+    transition: 0.3s;
+}
+
+#form-input-submit
+{
+    width: 35%;
+    height: 40px;
+    background-color: #009e52;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px; 
+    align-self: center;
+    cursor: pointer;
+    transition: 0.4s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+#form-input-submit:hover
+{
+    background-color: #00de73;
+    transition: 0.4s;
+}
+
+/* Responsivo */
+
+@media only screen and (max-width: 885px) {
+    #form-div-checkbox-termos label { font-size: 10px; }
+}
+
+@media only screen and (max-width: 852px) {
+    main form { max-width: 80%; max-height: 100%;}
+}
+
+@media only screen and (max-width: 414px) {
+    main form { max-width: 80%; }
+}
+
+@media only screen and (max-width: 400px) and (max-height: 742px) {
+    main { min-height: 102vh; max-height: 105vh; }
+}
+
+@media only screen and (max-width: 375px) {
+    main form { max-width: 75%; }
+}
+
+@media only screen and (max-height: 838px) {
+    main form { max-height: 100%; }
+    main form label {font-size: 14px;}
+    main form h1 {margin-bottom: 20px; font-size: 19px; }
+
+    .form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+    {
+        height: 28px;
+        font-size: 15px; 
+    }
+
+    input.masked { height: 26px; }
+}
+
+@media only screen and (max-height: 663px) {
+    main form { max-width: 70%; }
+    main form label { font-size: 13px; }
+    main form h1 { font-size: 18px; }
+
+    .form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+    {
+        height: 24px;
+        font-size: 13px; 
+    }
+
+    input.masked { height: 20px; }
+}
+
+@media only screen and (max-width: 900px) and (max-height: 605px) {
+    main { max-height: 115vh; min-height: 112vh;}
+}
+
+@media only screen and (min-width: 900px) and (max-height: 605px) {
+    main { max-height: 115vh; min-height: 112vh;}
+    main form label {font-size: 14px;}
+    main form h1 {margin-bottom: 20px; font-size: 19px; }
+
+    .form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+    {
+        height: 28px;
+        font-size: 15px; 
+    }
+
+    input.masked { height: 26px; }
+}
+
+@media only screen and (max-width: 736px) and (max-height: 414px) {
+    main { min-height: 140vh;}
+}
+
+@media only screen and (max-width: 823px) and (max-height: 411px) {
+    main { min-height: 145vh;}
+    main form { max-width: 70%; }
+    main form label { font-size: 12px; }
+    main form h1 { font-size: 16px; }
+
+    .form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+    {
+        height: 22px;
+        font-size: 12px; 
+    }
+
+    input.masked { height: 18px; }
+}
+
+@media only screen and (max-width: 667px) and (max-height: 375px) {
+    main { min-height: 145vh;}
+    main form { max-width: 70%; }
+    main form label { font-size: 12px; }
+    main form h1 { font-size: 16px; }
+
+    .form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+    {
+        height: 22px;
+        font-size: 12px; 
+    }
+
+    input.masked { height: 18px; }
+}
+
+@media only screen and (max-width: 812px) and (max-height: 485px) {
+    main { min-height: 148vh;}
+    main form { max-width: 68%; }
+    main form label { font-size: 11px; }
+    main form h1 { font-size: 15px; }
+
+    .form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+    {
+        height: 21px;
+        font-size: 11px; 
+    }
+
+    input.masked { height: 17px; }
+}
+
+@media only screen and (max-height: 320px) {
+    main { min-height: 168vh;}
+    main form { max-width: 68%; }
+    main form label { font-size: 11px; }
+    main form h1 { font-size: 15px; }
+
+    .form-input1, .form-input2, #form-div-cidade-estado select, .shell, input.masked, #telefone-container
+    {
+        height: 21px;
+        font-size: 11px; 
+    }
+
+    input.masked { height: 17px; }
+}

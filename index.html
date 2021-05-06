@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/styleInscrevase.css">
+    <link rel="stylesheet" href="css/stylePrincipal.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Cross Host | Inscreva-se</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img src="img/icon.png" id="logo-icon" alt="Logo feita a partir de uma seta vermelha para a direita, como um botão de 'play'"></a>
+        <a href="index.html"><img src="img/logo.png" id="logo-full" alt="Logo feita a partir de uma seta vermelha para a direita, como um botão de 'play' e texto 'Cross Host'"></a>
+        <div id="nav-flex-child">
+            <h1>Febrasgo Play - Alternativas minimamente invasivas no tratamento do mioma uterino</h1>
+            <p>18 de julho de 2021 às 13:00 <span>(GMT -03:00)</span></p>
+        </div>
+        <button>Precisa de ajuda?</button>
+    </nav>
+
+    <main>
+        <div class="animacao-bg"></div>
+        <form class="form-container" action="stream.html">
+            <h1 class="title-inscrevase">Inscreva-se</h1>
+
+            <label id="nome-label" for="nome">Nome</label>
+            <input class="form-input1" type="text" id="nome" name="nome" placeholder="Insira o nome completo" onkeyup="inputReset(this)" required autofocus>
+            <label id="email-label" for="nome">E-mail</label>
+            <input class="form-input1" type="email" id="email" name="email" placeholder="exemplo@ex.com" onkeyup="inputReset(this)" required>
+            <label id="tel-label" for="tel">Telefone</label>
+            <div id="telefone-container">
+                <input class="form-input1 masked" type="tel" id="tel" name="tel" placeholder="(XX) XXXX-XXXXX" onkeyup="inputTelReset()" required>
+            </div>
+            <div id="form-div-cidade-estado">
+                <div>
+                    <label id="cidade-label" for="cidade">Cidade</label>
+                    <input class="form-input2" type="text" id="cidade" name="cidade" placeholder="Nome da cidade" onkeyup="inputReset(this)" required>
+                </div>
+                <div>
+                    <label id="uf-label" for="uf">Estado</label>
+                    <select id="uf" name="uf">
+                        <option value="SP" selected>SP</option>
+                        <option value="RJ">RJ</option>
+                        <option value="ES">ES</option>
+                        <option value="MG">MG</option>
+                        <option value="SC">SC</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="form-div-checkbox-termos" onclick="toggleCheck(); inputCheckReset();">
+                <div id="custom-checkbox" class="custom-checkbox">
+                    <input type="checkbox" class="checkboxTermos" id="checkboxTermos" name="checkboxTermos" required>
+                </div>
+                <label for="checkboxTermos">Concordo em fornecer os dados acima ao organizador do evento conforme os <a href="#">Termos de Uso</a></label>
+            </div>
+
+            <input id="form-input-submit" type="submit" value="Enviar" onclick="validSubmit()">
+        </form>
+        <button class="button-ajuda-mobile"></button>
+    </main>
+
+    <script src="js/scriptInscrevase.js"></script>
+    <script src="js/masking-input.js" data-autoinit="true"></script>
+</body>
+</html>
